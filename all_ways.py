@@ -19,8 +19,7 @@ def all_ways_up(stairs: int, steps: List[int]) -> List[List[int]]:
 
         result: List[int]= all_ways_up(stairs= new_stairs, steps= steps)
         if result != None:
-            for value in result:
-                value.append(step)
+            list(map(lambda value: value.append(step), result))
             all_ways.extend(result)
     return all_ways
 
