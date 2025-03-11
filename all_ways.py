@@ -9,7 +9,7 @@ def all_ways_up(stairs: int, steps: List[int]) -> List[List[int]]:
     Returns:
         List[List[int]]: _A list of all the ways to get to the top_
     """
-    all_ways: List[int] = []
+    all_ways: List[List[int]] = []
     if stairs < 0:
         return None
     if stairs == 0:
